@@ -1,0 +1,108 @@
+body{
+  font-family: Roboto;
+  font-size: 14px;
+  width: 700px;
+  margin: auto;
+  background: url("backdrop.webp");
+  background-position: center;
+}
+a{
+  color: blue;
+}
+.education-container,
+.employment-container,
+.certifications-container,
+.skills-container,
+.courses-container{
+  display: flex;
+  border: 2px solid black;
+  position: relative;
+  overflow: hidden;
+  background-color: lightblue;
+  color: black;
+  flex: 1;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.education-container,
+.education-left-section{
+  height: 410px;
+}
+
+.employment-container,
+.employment-left-section{
+  height: 420px;
+}
+
+.certifications-container,
+.certifications-left-section{
+  height: 160px;
+}
+
+.skills-container,
+.skills-left-section{
+  height: 290px;
+}
+
+.courses-container,
+.courses-left-section{
+  height: 200px;
+}
+
+.education-container:hover .right-section,
+.education-container:hover .education-left-section,
+.employment-container:hover .right-section,
+.employment-container:hover .employment-left-section,
+.certifications-container:hover .right-section,
+.certifications-container:hover .certifications-left-section,
+.skills-container:hover .right-section,
+.skills-container:hover .skills-left-section,
+.courses-container:hover .right-section,
+.courses-container:hover .courses-left-section{
+  left: 0;
+}
+.education-left-section,
+.employment-left-section,
+.certifications-left-section,
+.skills-left-section,
+.courses-left-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  font-weight: bold;
+  font-size: 24px;
+  position: absolute;
+  left: 250px;
+  transition: left 0.3s;
+  text-align: center;
+}
+
+.body-icon{
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.right-section{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 10px 20px;
+  margin-left: 200px; 
+  position: absolute;
+  left: 700px;
+  transition: left 0.3s;
+}
+.heading{
+  font-weight: bold;
+  margin-top: 5px;
+}
+.subheading{
+  font-style: italic;
+}
+.bullet-points{
+  margin-left: 20px;
+}
